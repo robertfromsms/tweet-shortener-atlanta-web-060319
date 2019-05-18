@@ -19,7 +19,7 @@ def word_substituter(string)
   string_array = string.split(" ")
   string_array.collect {|word|
     dictionary.each {|key, value|
-      if word == key
+      if word == key || word === key.capitalize
         string_array[index] = value
       end
     }
