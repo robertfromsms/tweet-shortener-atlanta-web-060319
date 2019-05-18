@@ -21,6 +21,7 @@ def word_substituter(string)
     dictionary.each {|key, value|
       if word == key
         string_array[index] = value
+      end
     }
     index += 1
   }
