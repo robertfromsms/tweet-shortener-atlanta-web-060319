@@ -26,20 +26,11 @@ def word_substituter(string)
     index += 1
   }
   string_array.join(" ")
+  puts string_array.join(" ")
 end
 
 def bulk_tweet_shortener(array_string)
   array_string.each {|string|
-    index = 0
-    string_array = string.split(" ")
-    string_array.collect {|word|
-      dictionary.each {|key, value|
-        if word == key || word === key.capitalize
-          string_array[index] = value
-        end
-      }
-      index += 1
-    }
-    puts string_array.join(" ")
+    word_substituter(string)
   }
 end
