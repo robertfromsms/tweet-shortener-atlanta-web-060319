@@ -49,4 +49,5 @@ def shortened_tweet_truncator(string)
     return processed_string[0..136] +"..."
   else
     return processed_string
+  end
 end
