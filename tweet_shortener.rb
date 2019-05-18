@@ -25,7 +25,7 @@ def word_substituter(string)
     }
     index += 1
   }
-  string_array.join(" ")
+  return string_array.join(" ")
   puts string_array.join(" ")
 end
 
